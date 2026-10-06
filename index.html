@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+  >
+
+  <title>Vision X | Full-Stack Software Engineer</title>
+  <link rel="stylesheet" href="./style.css">
+
+  <meta
+    name="description"
+    content="Vision X — Full-Stack Software Engineer building modern web applications, AI systems and scalable digital experiences."
+  >
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- <link rel="stylesheet" href="./css/style.css"> -->
+</head>
+
+<body>
+
+  <!-- =====================================================
+       3D BACKGROUND
+  ====================================================== -->
+
+  <canvas id="gl" aria-hidden="true"></canvas>
+
+  <!-- =====================================================
+       INTRO
+  ====================================================== -->
+
+  <div id="intro">
+
+    <div class="intro-brand">
+      <h1>VISION X</h1>
+      <p>FULL-STACK SOFTWARE ENGINEER</p>
+    </div>
+
+    <div id="intro-status">
+      Initializing environment...
+    </div>
+
+    <button id="skip-intro">
+      Skip intro
+    </button>
+
+  </div>
+
+
+  <!-- =====================================================
+       HEADER
+  ====================================================== -->
+
+  <header id="header">
+
+    <a href="#hero" class="logo">
+      VISION <span>X</span>
+    </a>
+
+    <nav>
+
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+
+    </nav>
+
+    <button class="mobile-menu" id="mobile-menu">
+      ☰
+    </button>
+
+  </header>
+
+
+  <!-- =====================================================
+       TECHNOLOGY TOOLTIP
+  ====================================================== -->
+
+  <div id="tech-tip"></div>
+
+
+  <!-- =====================================================
+       TECHNOLOGY PANEL
+  ====================================================== -->
+
+  <div id="tech-panel">
+
+    <button id="close-panel">&times;</button>
+
+    <span class="panel-label">
+      TECHNOLOGY
+    </span>
+
+    <h3 id="panel-title">
+      React
+    </h3>
+
+    <ul id="panel-list"></ul>
+
+  </div>
+
+
+  <!-- =====================================================
+       MAIN
+  ====================================================== -->
+
+  <main>
+
+    <!-- =================================================
+         HERO
+    ================================================== -->
+
+    <section id="hero">
+
+      <div class="container hero-container">
+
+        <div class="hero-content">
+
+          <span class="eyebrow">
+            <span class="status-dot"></span>
+            AVAILABLE FOR NEW PROJECTS
+          </span>
+
+          <h1>
+            Build.
+            <br>
+            <span>Ship.</span>
+            <br>
+            Innovate.
+          </h1>
+
+          <p>
+            Full-Stack Software Engineer building modern web
+            applications, intelligent AI systems and scalable
+            digital experiences.
+          </p>
+
+          <div class="hero-buttons">
+
+            <a href="#projects" class="btn btn-primary">
+              Explore My Work
+              <span>↗</span>
+            </a>
+
+            <a href="#skills" class="btn btn-secondary">
+              View Skills
+            </a>
+
+          </div>
+
+          <div class="hero-stats">
+
+            <div class="stat">
+              <strong>05+</strong>
+              <span>Projects</span>
+            </div>
+
+            <div class="stat">
+              <strong>10+</strong>
+              <span>Technologies</span>
+            </div>
+
+            <div class="stat">
+              <strong>FULL</strong>
+              <span>Stack</span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="scroll-indicator">
+        <span></span>
+        SCROLL TO EXPLORE
+      </div>
+
+    </section>
+
+
+    <!-- =================================================
+         SKILLS
+    ================================================== -->
+
+    <section id="skills">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <span class="section-number">
+            01 / EXPERTISE
+          </span>
+
+          <h2>
+            Technologies I
+            <span>build with.</span>
+          </h2>
+
+          <p>
+            A modern development stack for creating complete
+            digital products from frontend to deployment.
+          </p>
+
+        </div>
+
+
+        <div class="skill-tabs" id="skill-tabs"></div>
+
+        <div class="skill-content">
+
+          <div class="skill-description">
+
+            <span id="skill-number">01</span>
+
+            <h3 id="skill-title">
+              Frontend Engineering
+            </h3>
+
+            <p id="skill-description">
+              Building responsive and interactive interfaces
+              with modern JavaScript frameworks.
+            </p>
+
+          </div>
+
+          <div class="skill-list" id="skill-list"></div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =================================================
+         PROJECTS
+    ================================================== -->
+
+    <section id="projects">
+
+      <div class="container">
+
+        <div class="section-heading projects-heading">
+
+          <span class="section-number">
+            02 / SELECTED WORK
+          </span>
+
+          <h2>
+            Things I've
+            <span>built.</span>
+          </h2>
+
+        </div>
+
+
+        <div class="projects-grid">
+
+
+          <article class="project-card">
+
+            <div class="project-visual project-one">
+
+              <div class="browser">
+
+                <div class="browser-top">
+
+                  <span></span>
+                  <span></span>
+                  <span></span>
+
+                </div>
+
+                <div class="dashboard">
+
+                  <div class="dash-sidebar"></div>
+
+                  <div class="dash-content">
+
+                    <div class="dash-line large"></div>
+                    <div class="dash-line"></div>
+
+                    <div class="chart">
+
+                      <i></i>
+                      <i></i>
+                      <i></i>
+                      <i></i>
+                      <i></i>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="project-info">
+
+              <span class="project-index">
+                01
+              </span>
+
+              <h3>SaaS Marketplace</h3>
+
+              <p>
+                Multi-vendor platform with subscriptions,
+                payments and administration tools.
+              </p>
+
+              <div class="project-tech">
+                <span>Next.js</span>
+                <span>Node.js</span>
+                <span>MongoDB</span>
+              </div>
+
+            </div>
+
+          </article>
+
+
+          <article class="project-card">
+
+            <div class="project-visual project-two">
+
+              <div class="ai-core">
+
+                <div class="ai-ring ring-one"></div>
+                <div class="ai-ring ring-two"></div>
+
+                <div class="ai-center">
+                  AI
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="project-info">
+
+              <span class="project-index">
+                02
+              </span>
+
+              <h3>AI Workflow Engine</h3>
+
+              <p>
+                Intelligent workflow automation using AI APIs
+                and modern backend services.
+              </p>
+
+              <div class="project-tech">
+                <span>React</span>
+                <span>Express</span>
+                <span>AI APIs</span>
+              </div>
+
+            </div>
+
+          </article>
+
+
+          <article class="project-card">
+
+            <div class="project-visual project-three">
+
+              <div class="analytics">
+
+                <div class="analytics-header">
+                  ANALYTICS
+                </div>
+
+                <div class="bars">
+
+                  <i style="height:35%"></i>
+                  <i style="height:58%"></i>
+                  <i style="height:44%"></i>
+                  <i style="height:76%"></i>
+                  <i style="height:92%"></i>
+                  <i style="height:68%"></i>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="project-info">
+
+              <span class="project-index">
+                03
+              </span>
+
+              <h3>Analytics Dashboard</h3>
+
+              <p>
+                Real-time business analytics dashboard with
+                role-based access and reporting.
+              </p>
+
+              <div class="project-tech">
+                <span>TypeScript</span>
+                <span>REST</span>
+                <span>Docker</span>
+              </div>
+
+            </div>
+
+          </article>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =================================================
+         ABOUT
+    ================================================== -->
+
+    <section id="about">
+
+      <div class="container about-grid">
+
+        <div class="about-content">
+
+          <span class="section-number">
+            03 / ABOUT
+          </span>
+
+          <h2>
+            Engineering
+            <span>complete products.</span>
+          </h2>
+
+          <p>
+            I build complete digital products — from polished
+            interfaces and backend APIs to databases, AI
+            integrations and deployment.
+          </p>
+
+          <p>
+            My focus is clean architecture, fast interfaces,
+            useful automation and software that keeps working
+            after launch.
+          </p>
+
+          <div class="about-points">
+
+            <div>
+              <strong>01</strong>
+              <span>Clean Architecture</span>
+            </div>
+
+            <div>
+              <strong>02</strong>
+              <span>Scalable Systems</span>
+            </div>
+
+            <div>
+              <strong>03</strong>
+              <span>Modern UI/UX</span>
+            </div>
+
+            <div>
+              <strong>04</strong>
+              <span>AI Integration</span>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="about-visual">
+
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="orbit orbit-three"></div>
+
+          <div class="core-cube">
+
+            <span class="cube-face front">API</span>
+            <span class="cube-face back">AI</span>
+            <span class="cube-face right">UI</span>
+            <span class="cube-face left">DB</span>
+            <span class="cube-face top">CLOUD</span>
+            <span class="cube-face bottom">GIT</span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =================================================
+         CONTACT
+    ================================================== -->
+
+    <section id="contact">
+
+      <div class="container contact-container">
+
+        <span class="section-number">
+          04 / CONTACT
+        </span>
+
+        <h2>
+          Let's build
+          <span>something.</span>
+        </h2>
+
+        <p>
+          Have an idea, project or product in mind?
+          Let's turn it into something real.
+        </p>
+
+        <a
+          href="mailto:you@example.com"
+          class="contact-email"
+        >
+          you@example.com
+        </a>
+
+        <div class="social-links">
+
+          <a href="#" target="_blank">
+            GitHub ↗
+          </a>
+
+          <a href="#" target="_blank">
+            LinkedIn ↗
+          </a>
+
+          <a href="#" target="_blank">
+            Resume ↗
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =====================================================
+       FOOTER
+  ====================================================== -->
+
+  <footer>
+
+    <span>
+      © 2026 Vision X
+    </span>
+
+    <span>
+      FULL-STACK SOFTWARE ENGINEER
+    </span>
+
+  </footer>
+
+
+  <!-- =====================================================
+       THREE.JS
+  ====================================================== -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+  <!-- =====================================================
+       MAIN JAVASCRIPT
+  ====================================================== -->
+
+  <script src="./script.js"></script>
+
+</body>
+</html>
